@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat='upgrade in upgrades | orderBy:"cost"'>
+    <strong>{{upgrade.name}}</strong>
+    {{upgrade.description}} ({{upgrade.cost | number:2}} strength) <button ng-click='controller.buy(upgrade)'>Buy</button>
+  </li>
+</ul>

@@ -1,0 +1,44 @@
+<doctype html>
+<html>
+<head>
+  <title>Amoebious</title>
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/css/amoeba.css">
+  <!-- endinject -->
+</head>
+<body ng-app='amoebious'>
+  <div ng-controller='MainController as vm'>
+    <amoeba-stats amoeba='vm.amoeba'></amoeba-stats>
+
+    <amoeba amoeba='vm.amoeba'></amoeba>
+
+    <div>
+      <h3>All Upgrades</h3>
+      <upgrades upgrades='vm.amoeba.availableUpgrades' buy='vm.amoeba.buy(upgrade)'></upgrades>
+    </div>
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/app.js -->
+  <!-- inject:js -->
+  <script src="/scripts/application.js"></script>
+  <script src="/scripts/controllers/MainController.js"></script>
+  <script src="/scripts/directives/amoeba.js"></script>
+  <script src="/scripts/directives/amoebaStats.js"></script>
+  <script src="/scripts/directives/upgrades.js"></script>
+  <script src="/scripts/services/amoeba.js"></script>
+  <script src="/scripts/services/sun.js"></script>
+  <script src="/scripts/services/upgradeService.js"></script>
+  <script src="/scripts/services/upgrades/chloroplastUpgrade.js"></script>
+  <script src="/scripts/services/upgrades/uselessUpgrade.js"></script>
+  <!-- endinject -->
+  <!-- endbuild -->
+</body>
+</html>
+</html>

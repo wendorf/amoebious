@@ -1,0 +1,17 @@
+{
+  "description": "Ambitious Amoebas",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wendorf/amoebious"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.10",
+    "gulp-inject": "^1.0.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-sass": "^0.7.3",
+    "gulp-webserver": "^0.7.2",
+    "jshint-stylish": "^0.4.0",
+    "wiredep": "^1.8.5"
+  }
+}
